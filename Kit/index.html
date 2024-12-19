@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ערכת כלים לטכנאי</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>ערכת כלים לטכנאי</h1>
+        <p>רשימה מקיפה של כלים חיוניים לטכנאים</p>
+    </header>
+
+    <div class="stats-container">
+        <div class="stat-item">
+            <span class="stat-number">32</span>
+            <span class="stat-label">כלים חיוניים</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">8</span>
+            <span class="stat-label">קטגוריות</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">שימושים שונים</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">זמינות</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="category">
+            <h2>🔧 כלים כלליים</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">מברג מגנטי
+                    <div class="tool-details">מברג עם קצה מגנטי לטיפול קל בברגים
+                        <span class="price-tag">₪50-120</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">סט מפתחות אלן
+                    <div class="tool-details">ערכת מפתחות אלן לסוגי ברגים ספציפיים
+                        <span class="price-tag">₪30-80</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">מברג טורקס
+                    <div class="tool-details">מיועד לברגי טורקס הנפוצים במחשבים ניידים
+                        <span class="price-tag">₪40-100</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">פטיש קטן
+                    <div class="tool-details">לכיוונים מכניים קלים
+                        <span class="price-tag">₪20-50</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🖥️ כלי תיקון מחשבים</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">ערכת ניקוי למחשב
+                    <div class="tool-details">כולל מברשות, אוויר דחוס ותמיסת ניקוי
+                        <span class="price-tag">₪50-150</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">משחת קירור
+                    <div class="tool-details">מבטיחה העברת חום יעילה בין המעבד למקרר
+                        <span class="price-tag">₪30-80</span>
+                        <span class="software-name">Arctic MX-4, Thermal Grizzly</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כרטיס POST
+                    <div class="tool-details">מאבחן תקלות חומרה באמצעות קודי שגיאה
+                        <span class="price-tag">₪100-300</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">זכוכית מגדלת עם תאורה
+                    <div class="tool-details">לעבודה מדויקת על רכיבים קטנים
+                        <span class="price-tag">₪80-200</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🔌 כלי רשת</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">כלי לחיצה (RJ45, RJ11)
+                    <div class="tool-details">משמש ללחיצת כבלי רשת וטלפון
+                        <span class="price-tag">₪80-250</span>
+                        <span class="software-name">Klein Tools, Fluke Networks</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">בודק כבלים
+                    <div class="tool-details">בודק את תקינות כבלי הרשת
+                        <span class="price-tag">₪50-400</span>
+                        <span class="software-name">Fluke Networks, NetAlly</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">מקלף כבלים
+                    <div class="tool-details">מקלף בידוד מכבלי רשת
+                        <span class="price-tag">₪30-100</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">נתב נייד
+                    <div class="tool-details">נב קומפקטי לגישה לאינטרנט בדרכים
+                        <span class="price-tag">₪100-300</span>
+                        <span class="software-name">TP-Link, GL.iNet</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>⚡ ציוד בדיקה</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">רב-מודד
+                    <div class="tool-details">מודד מתח, זרם והתנגדות
+                        <span class="price-tag">₪100-800</span>
+                        <span class="software-name">Fluke, UNI-T</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">בודק USB
+                    <div class="tool-details">מנתח הספק חשמלי והעברת נתונים בחיבורי USB
+                        <span class="price-tag">₪50-200</span>
+                        <span class="software-name">ChargerLAB POWER-Z</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">פלייר קטן
+                    <div class="tool-details">לטיפול מדויק ברכיבים קטנים
+                        <span class="price-tag">₪30-150</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">בודק סוללות
+                    <div class="tool-details">בודק את הטעינה ומצב הסוללות
+                        <span class="price-tag">₪80-300</span>
+                        <span class="software-name">ISDT, SKYRC</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🔒 כלי אבטחה</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">תוכנות אבטחה
+                    <div class="tool-details">כלים לסריקת וירוסים וזיהוי תוכנות זדוניות
+                        <span class="price-tag">₪150-500 לשנה</span>
+                        <span class="software-name">Malwarebytes, ESET, Kaspersky</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">תוכנת גיבוי
+                    <div class="tool-details">כלי לגיבוי מהיר של מידע לפני תיקונים
+                        <span class="price-tag">₪200-600</span>
+                        <span class="software-name">Acronis True Image, Macrium Reflect</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כלי שחזור מידע
+                    <div class="tool-details">תוכנות לשחזור קבצים שנמחקו
+                        <span class="price-tag">₪300-1000</span>
+                        <span class="software-name">EaseUS, Recuva Pro, R-Studio</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כלי איפוס סיסמאות
+                    <div class="tool-details">תוכנות לאיפוס סיסמאות מערכת
+                        <span class="price-tag">₪100-400</span>
+                        <span class="software-name">PassFab, PCUnlocker</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>📱 כלי תיקון מובייל</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">ערכת מברגים למכשירים ניידים
+                    <div class="tool-details">סט מברגים זעירים מותאמים לטלפונים וטאבלטים
+                        <span class="price-tag">₪50-200</span>
+                        <span class="software-name">iFixit, JAKEMY</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">משאבת ואקום
+                    <div class="tool-details">להרמת מסכים ופתיחת מכשירים עדינים
+                        <span class="price-tag">₪100-400</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">מלקטת ESD
+                    <div class="tool-details">כלי מדויק לעבודה עם רכיבים זעירים עם הגנה מחשמל סטטי
+                        <span class="price-tag">₪40-150</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">משטח עבודה מגנטי
+                    <div class="tool-details">לארגון ושמירה על ברגים וחלקים קטנים
+                        <span class="price-tag">₪30-100</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🧰 תוכנות חיוניות</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">כלי דיאגנוסטיקה
+                    <div class="tool-details">תוכנות לבדיקת תקינות חומרה ומערכת ההפעלה
+                        <span class="price-tag">₪0-500 לרישיון שנתי</span>
+                        <span class="software-name">AIDA64, HWiNFO, CPU-Z</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">תוכנות ניהול דרייברים
+                    <div class="tool-details">כלים להתקנה וניהול דרייברים באופן אוטומטי
+                        <span class="price-tag">₪0-200 לרישיון</span>
+                        <span class="software-name">DriverEasy, Snappy Driver Installer</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כלי מעקב טמפרטורה
+                    <div class="tool-details">תוכנות לניטור טמפרטורות המעבד והמערכת
+                        <span class="price-tag">חינמי</span>
+                        <span class="software-name">Core Temp, HWMonitor, SpeedFan</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">תוכנות בדיקת דיסקים
+                    <div class="tool-details">כלים לבדיקת תקינות ותיקון כונני אחסון
+                        <span class="price-tag">₪0-300</span>
+                        <span class="software-name">HD Tune Pro, CrystalDiskInfo</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="category">
+            <h2>🧰 ציוד מתכלה</h2>
+            <ul>
+                <li onclick="toggleDetails(this)">מגבוני ניקוי
+                    <div class="tool-details">לניקוי מסכים ומשטחים אלקטרוניים
+                        <span class="price-tag">₪20-50 לחבילה</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כבלי רשת
+                    <div class="tool-details">מלאי של כבלי רשת באורכים שונים
+                        <span class="price-tag">₪100-300 למלאי בסיסי</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">רצועות קשירה
+                    <div class="tool-details">לארגון וקשירת כבלים
+                        <span class="price-tag">₪20-50 לחבילה</span>
+                    </div>
+                </li>
+                <li onclick="toggleDetails(this)">כפפות אנטי-סטטיות
+                    <div class="tool-details">להגנה על רכיבים רגישים מחשמל סטטי
+                        <span class="price-tag">₪30-80 לחבילה</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- מקטע סיכום עלויות -->
+        <div class="category cost-summary">
+            <h2>💰 סיכום עלויות משוער</h2>
+            <div class="costs-grid">
+                <div class="cost-item">
+                    <h3>כלים פיזיים</h3>
+                    <div class="cost-details">
+                        <p>מינימום: ₪1,000</p>
+                        <p>מקסימום: ₪4,000</p>
+                        <small>כולל כלים בסיסיים וציוד מתכלה</small>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <h3>תוכנות ורישיונות</h3>
+                    <div class="cost-details">
+                        <p>מינימום: ₪1,500</p>
+                        <p>מקסימום: ₪5,000</p>
+                        <small>עלות שנתית לרישיונות הכרחיים</small>
+                    </div>
+                </div>
+                <div class="cost-item">
+                    <h3>ציוד מתכלה שנתי</h3>
+                    <div class="cost-details">
+                        <p>מינימום: ₪500</p>
+                        <p>מקסימום: ₪2,000</p>
+                        <small>חידוש מלאי שנתי</small>
+                    </div>
+                </div>
+                <div class="cost-item total">
+                    <h3>סה"כ השקעה ראשונית</h3>
+                    <div class="cost-details">
+                        <p>מינימום: ₪3,000</p>
+                        <p>מקסימום: ₪11,000</p>
+                        <small>לא כולל הוצאות שוטפות</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 ערכת כלים לטכנאי. עוצב בקפידה.</p>
+        <p>פותח על ידי Claude AI ו<a href="https://anlominus.github.io/Solutions-King/" target="_blank"
+                class="credit-link">לאון יעקובוב</a></p>
+        <p><a href="#privacy">מדיניות פרטיות</a> | <a href="#terms">תנאי שימוש</a></p>
+    </footer>
+
+    <script src="modals.js"></script>
+    <script>
+        function toggleDetails(element) {
+            const details = element.querySelector('.tool-details');
+            details.style.display = details.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+
+</html>

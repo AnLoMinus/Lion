@@ -1,0 +1,364 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  direction: rtl;
+}
+
+header {
+  background-color: #004c8c;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #2d2d2d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.category h2 {
+  color: #3399ff;
+  font-size: 28px;
+  border-bottom: 2px solid #3399ff;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.category ul li {
+  font-size: 18px;
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 15px;
+  background: #3d3d3d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.category ul li:hover {
+  color: #3399ff;
+  transform: translateY(-2px);
+  background: #4d4d4d;
+}
+
+.tool-details {
+  display: none;
+  background: #333333;
+  padding: 12px;
+  margin-top: 12px;
+  border-right: 3px solid #3399ff;
+  font-size: 16px;
+  color: #cccccc;
+}
+
+/* הוספת סגנון למחיר */
+.price-tag {
+  display: block;
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 8px;
+  font-size: 0.9em;
+}
+
+.software-name {
+  color: #ff9800;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+  font-size: 0.9em;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+footer a {
+  color: #3399ff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p:nth-child(2) {
+  color: #3399ff;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+@media (max-width: 1200px) {
+  .category ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .category ul li {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 900px) {
+  .category ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  .category ul {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2em;
+  }
+
+  .category h2 {
+    font-size: 24px;
+  }
+}
+
+/* מקטע הסטטיסטיקות */
+.stats-container {
+  background: #004c8c;
+  padding: 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-number {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #3399ff;
+}
+
+.stat-label {
+  font-size: 1.1em;
+  color: #e0e0e0;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 900px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stat-number {
+    font-size: 2.2em;
+  }
+
+  .stat-label {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats-container {
+    grid-template-columns: 1fr;
+    padding: 20px 15px;
+  }
+
+  .stat-item {
+    padding: 12px;
+  }
+}
+
+/* סגנון למקטע סיכום עלויות */
+.cost-summary {
+  margin-top: 50px;
+  padding: 30px;
+  background: #1a1a1a;
+  border-radius: 12px;
+}
+
+.costs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.cost-item {
+  background: #2d2d2d;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.cost-item h3 {
+  color: #3399ff;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+}
+
+.cost-details p {
+  margin: 8px 0;
+  font-size: 1.1em;
+}
+
+.cost-details p:first-child {
+  color: #4caf50;
+}
+
+.cost-details p:nth-child(2) {
+  color: #ff9800;
+}
+
+.cost-details small {
+  display: block;
+  margin-top: 10px;
+  color: #888;
+  font-size: 0.9em;
+}
+
+.cost-item.total {
+  background: #004c8c;
+}
+
+.cost-item.total h3 {
+  color: white;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 1200px) {
+  .costs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .costs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cost-item {
+    padding: 15px;
+  }
+}
+
+/* סגנונות למודלים */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #2d2d2d;
+  margin: 5% auto;
+  padding: 25px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+  color: #e0e0e0;
+}
+
+.close-button {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-button:hover {
+  color: #3399ff;
+}
+
+.modal-body {
+  margin-top: 20px;
+}
+
+.modal-body h3 {
+  color: #3399ff;
+  margin: 20px 0 10px;
+}
+
+.modal-body p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* התאמה למסכים קטנים */
+@media (max-width: 600px) {
+  .modal-content {
+    margin: 10% auto;
+    width: 90%;
+    padding: 15px;
+  }
+}
+
+.credit-link {
+  color: #3399ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.credit-link:hover {
+  color: #66b3ff;
+  text-decoration: underline;
+}
